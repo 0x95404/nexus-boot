@@ -1,0 +1,7 @@
+[workspace]
+members = ["bootloader", "pxe-server"]
+resolver = "2"
+
+[workspace.dependencies]
+eframe = { version = "0.28", default-features = false, features = ["glow"] }
+limine-uefi = "0.3"
