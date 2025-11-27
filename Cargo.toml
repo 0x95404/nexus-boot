@@ -1,0 +1,11 @@
+[workspace]
+members = ["bootloader"]
+resolver = "2"
+
+[workspace.dependencies]
+eframe = { version = "0.28", default-features = false, features = ["glow"] }
+limine-uefi = "0.3"
+uefi = { version = "0.26", features = ["alloc"] }
+log = "0.4"
+goblin = "0.8"
+ntfs = "0.3"
